@@ -1,0 +1,135 @@
+.navigation {
+    height: 100vh;
+    width: 300px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    position: fixed;
+    left: 0;
+    transition: transform 0.3s ease;
+    z-index: 1000;
+}
+
+@media screen and (max-width: 768px) {
+    .navigation {
+        left: auto;
+        right: -300px;
+        transform: translateX(0);
+    }
+
+    .navigation.visible {
+        transform: translateX(-300px);
+    }
+}
+
+.cross-button {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    .cross-button {
+        display: block;
+    }
+}
+
+.profile {
+    margin-top: 20px;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border-width: 10px;
+    border-style: solid;
+    border-color: rgb(44, 43, 43);
+}
+
+.mediaicons {
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li h4 {
+    cursor: pointer;
+    color: white;
+}
+
+.links li h4:hover {
+    color: yellow;
+}
+
+.links li h4.active {
+    color: yellow;
+    font-weight: bold;
+}
+
+.mediaicons div {
+    height: 40px;
+    width: 40px;
+    background-color: yellow;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.mediaicons div:hover {
+    background-color: white;
+}
+
+.mediaicons div img {
+    height: 20px;
+    width: 20px;
+}
+
+.links li {
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.hamburger {
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1001;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+}

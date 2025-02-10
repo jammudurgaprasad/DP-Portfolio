@@ -1,0 +1,19 @@
+.resume{
+    margin-left: 10px;
+}
+.resume h1 {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.resume h1::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: rgb(244, 229, 64);
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+}
