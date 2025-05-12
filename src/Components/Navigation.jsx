@@ -27,6 +27,7 @@ const Navigation = ({ isVisible, onItemClick }) => {
       </div>
       <img src={my_profile} alt='myimage' className='profile' />
       <div><h2>Durga Prasad</h2></div>
+      
       <div className='mediaicons'>
         <div onClick={() => window.open("https://x.com/j_durga_prasad?t=dwzYU1U1-CEXis-QWG-lZg&s=08", "_blank")} style={{ cursor: "pointer" }}><img src={twitter} alt='twitter'/></div>
         <div onClick={() => window.open("https://www.facebook.com/profile.php?id=100016757598944", "_blank")} style={{ cursor: "pointer" }}><img src={facebook} alt='facebook'/></div>

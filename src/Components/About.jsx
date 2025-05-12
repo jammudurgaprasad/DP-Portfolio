@@ -5,6 +5,12 @@ const About = () => {
   return (
     <div className='about'>
         <h1>About Me</h1>
+        <button
+            onClick={() => window.open("/DP_s_Full_Stack_Developer_Resume (1).pdf", "_blank")}
+            className="resume-btn"
+        >
+            Resume
+        </button>
     <p>
         Hello! I'm <strong>Durga Prasad</strong>, a passionate web developer with a strong background in 
         front-end and back-end development. I love creating modern, responsive, and user-friendly websites. 
@@ -24,7 +30,7 @@ const About = () => {
     <div className='about-details'>
         <div>
             <p><svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="black"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg><strong>Birthday:</strong> 4 March 2005</p>
-            <p><svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="black"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg><strong>Website:</strong> www.example.com</p>
+            <p><svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="black"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg><strong>Website:</strong> https://jdpsportfolio.netlify.app/</p>
             <p><svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="black"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg><strong>Phone:</strong> +91 630 243 7147</p>
             <p><svg xmlns="http://www.w3.org/2000/svg" height="18px" viewBox="0 -960 960 960" width="18px" fill="black"><path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z"/></svg><strong>City:</strong> Guntur, India</p>
         </div>

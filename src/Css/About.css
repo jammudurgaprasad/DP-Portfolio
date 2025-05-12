@@ -7,6 +7,23 @@
     padding-bottom: 5px;
 }
 
+
+.resume-btn {
+    padding: 6px 14px;
+    margin-left: 20px;
+    background-color: yellow;
+    color: black;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.resume-btn:hover {
+    background-color: white;
+}
+
 .about h1::after {
     content: "";
     display: block;

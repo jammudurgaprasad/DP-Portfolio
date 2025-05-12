@@ -8,6 +8,8 @@ import bill from '../Certificates&Projects/BillGenerator.png'
 import calculator from '../Certificates&Projects/calculator.png'
 import fest from '../Certificates&Projects/Fest.png'
 import todo from '../Certificates&Projects/ToDo.png'
+import weather from '../Certificates&Projects/Weather.png'
+import ecommerce from '../Certificates&Projects/ecommerce.png'
 
 const Projects = () => {
   const certificates = [
@@ -17,7 +19,7 @@ const Projects = () => {
       title: "Online food ordering system",
       image: dpkitchen,
       git:"https://github.com/jammudurgaprasad/project4",
-      browse:"https://www.google.co.in/",
+      browse:"https://jammudurgaprasad.pythonanywhere.com/",
     },
     {
       type: "Task",
@@ -55,6 +57,22 @@ const Projects = () => {
       title: "To-Do Application",
       image: todo,
       git:"https://github.com/jammudurgaprasad/Full-Stack-ToDo-App",
+      browse: "https://dptodoapp.netlify.app/",
+    },
+    {
+      type: "Project",
+      technologies:" React Js, CSS,",
+      title: "Weather Application",
+      image: weather,
+      git:"https://github.com/jammudurgaprasad/Weather_App",
+      browse: "https://dpsweatherapp.netlify.app/",
+    },
+    {
+      type: "Project",
+      technologies:" React, Node, Express, MongoDB,",
+      title: "E-Commerce Application",
+      image: ecommerce,
+      git:"https://github.com/jammudurgaprasad/E-commerse",
     },
   ]
 
@@ -86,8 +104,8 @@ const Projects = () => {
                     <div>
                       <img 
                         src={browser} 
-                        alt='GitHub Link' 
-                        onClick={() => window.open(item.git, "_blank")} 
+                        alt='Web Link' 
+                        onClick={() => window.open(item.browse, "_blank")} 
                       />
                     </div>
                   )}  
